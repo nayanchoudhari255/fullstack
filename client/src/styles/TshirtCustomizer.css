@@ -1,0 +1,172 @@
+
+/* TshirtCustomizer.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Customizer Container */
+.customizer-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensures both sections stretch to the same height */
+  gap: 2rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Ensure Equal Height for Both Sections */
+.canvas-section, .settings-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+#tshirt-canvas {
+  max-width: 100%;
+  border: 2px solid #ddd;
+}
+
+/* Settings Section */
+.settings-section {
+  max-width: 400px;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.settings-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Color Options */
+.tshirt-colors h4,
+.image-upload h4,
+.text-settings h4 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.color-options img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.color-options img.selected,
+.color-options img:hover {
+  transform: scale(1.1);
+  border: 3px solid #007bff;
+}
+
+/* Input Fields */
+input[type='text'],
+input[type='number'],
+input[type='file'] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+input[type='color'] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type='range'] {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.actions button {
+  background: #007bff;
+  color: white;
+ padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  flex: 1;
+  text-align: center;
+  min-width: 100px;
+}
+
+.actions button:hover {
+  background: #0056b3;
+}
+
+/* Text Button */
+.applytxt {
+  background: #007bff;
+  color: white;
+ padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  flex: 1;
+  text-align: center;
+  min-width:100%;
+}
+
+.applytxt:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .customizer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    width: 100%;
+  }
+  .canvas-section, .settings-section {
+    height: auto;
+  }
+  .actions {
+    flex-direction: column;
+  }
+}

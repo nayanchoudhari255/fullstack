@@ -1,0 +1,266 @@
+/* Main container */
+.dashboard-container {
+  padding: 1.5rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Page title */
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Common spacing */
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+/* Card styles */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.card-small {
+  padding: 1rem;
+}
+
+/* Profile section */
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-icon-container {
+  background-color: #dbeafe; /* blue-100 */
+  border-radius: 9999px;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.profile-icon {
+  height: 2rem;
+  width: 2rem;
+  color: #2563eb; /* blue-600 */
+}
+
+.profile-content {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.profile-detail {
+  color: #6b7280; /* gray-500 */
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.profile-detail-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.profile-badge {
+  background-color: #dcfce7; /* green-100 */
+  color: #166534; /* green-800 */
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stat-heading {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value-active {
+  color: #16a34a; /* green-600 */
+  font-weight: 600;
+}
+
+.stat-value-default {
+  color: #374151; /* gray-700 */
+}
+
+.stat-value-highlight {
+  color: #2563eb; /* blue-600 */
+  font-weight: 600;
+}
+
+/* Quick actions */
+.actions-heading {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .actions-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f9fafb; /* gray-50 */
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.action-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #4b5563; /* gray-600 */
+  margin-bottom: 0.5rem;
+}
+
+.action-label {
+  font-size: 0.875rem;
+  
+}
+.action-label a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Loading state */
+.loading-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.loading-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading-circle {
+  border-radius: 9999px;
+  background-color: #e5e7eb; /* gray-200 */
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+.loading-line {
+  height: 1rem;
+  background-color: #e5e7eb; /* gray-200 */
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.loading-line-half {
+  width: 50%;
+}
+
+.loading-line-third {
+  width: 33.333333%;
+}
+
+.loading-line-quarter {
+  width: 25%;
+}
+
+.loading-text {
+  margin-top: 1rem;
+  color: #6b7280; /* gray-500 */
+}
+
+/* Error message */
+.error-container {
+  background-color: #fef2f2; /* red-50 */
+  border-left: 4px solid #ef4444; /* red-500 */
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: #b91c1c; /* red-700 */
+}
+
+.error-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fee2e2; /* red-100 */
+  color: #b91c1c; /* red-700 */
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.error-button:hover {
+  background-color: #fecaca; /* red-200 */
+}
+
+/* No profile message */
+.warning-container {
+  background-color: #fffbeb; /* yellow-50 */
+  border-left: 4px solid #f59e0b; /* yellow-500 */
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.warning-message {
+  color: #b45309; /* yellow-700 */
+}

@@ -1,0 +1,12 @@
+{
+  "tshirts": [
+    { "id": 1, "name": "Red T-Shirt", "price": 25, "image": "/images/red.jpg" },
+    { "id": 2, "name": "Blue T-Shirt", "price": 30, "image": "/images/blue.jpg" },
+    { "id": 3, "name": "Green T-Shirt", "price": 28, "image": "/images/green.jpg" },
+    { "id": 4, "name": "Black T-Shirt", "price": 35, "image": "/images/black.jpg" },
+    { "id": 5, "name": "White T-Shirt", "price": 20, "image": "/images/white.jpg" },
+    { "id": 6, "name": "Yellow T-Shirt", "price": 32, "image": "/images/yellow.jpg" },
+    { "id": 7, "name": "Purple T-Shirt", "price": 40, "image": "/images/purple.jpg" }
+  ]
+}
+

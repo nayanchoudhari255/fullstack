@@ -1,0 +1,77 @@
+.payment-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.credit-card-section {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-icons img {
+  width: 40px;
+  margin-left: 5px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-row .input-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-row .input-group:last-child {
+  margin-right: 0;
+}
+
+.btn-place-order,.btn-verify-otp {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-place-order:hover {
+  background: #0056b3;
+}

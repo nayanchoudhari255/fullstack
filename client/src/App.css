@@ -1,0 +1,41 @@
+.customizer-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .canvas-container {
+    border: 2px solid #ddd;
+    padding: 10px;
+  }
+  
+  .settings {
+    width: 300px;
+  }
+  
+  .color-options img {
+    width: 50px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .image-upload {
+    margin-top: 10px;
+  }
+  
+  .text-settings input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  

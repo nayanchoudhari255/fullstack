@@ -1,0 +1,146 @@
+/* TshirtCustomizer.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /* Cart Container */
+  .cart-container {
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  .cart-container h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    width: 100%;
+  }
+  
+  /* Cart Grid */
+  .cart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 0.5rem;
+  }
+  
+  /* Cart Item */
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cart-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .cart-image {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .cart-details {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .cart-details p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Cart Actions */
+  .cart-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  /* Remove Button */
+  .btn-remove {
+    background: #3a5bd0;
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-size: 0.9rem;
+  }
+  
+  .btn-remove:hover {
+    background: #2448cd;
+  }
+  
+  /* Buy Now Button */
+  .btn-buy-now {
+    background: #3a5bd0;
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-size: 0.9rem;
+  }
+  
+  .btn-buy-now:hover {
+    background: #2448cd;
+  }
+  
+  /* Checkout Button */
+  .btn-checkout {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    background: #3a5bd0;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .btn-checkout:hover {
+    background: #2448cd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cart-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
