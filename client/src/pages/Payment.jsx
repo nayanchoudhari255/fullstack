@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "../styles/Payment.css";
+import "../styles/payment.css";
 import visa from "../assets/visa.png";
 import mastercard from "../assets/mastercard.png";
 import amex from "../assets/amex.png";
