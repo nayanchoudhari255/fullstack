@@ -1,32 +1,8 @@
-// import axios from "axios";
 
-// const API_URL = "http://localhost:5001/api"; // Ensure this matches your backend
-
-// const API = axios.create({
-//   baseURL: API_URL,
-//   headers: { "Content-Type": "application/json" },
-// });
-
-// export const register = async (userData) => {
-//   const response = await API.post("/auth/register", userData);
-//   return response.data;
-// };
-
-// export const login = async (email, password) => {
-//   const response = await API.post("/auth/login", { email, password });
-//   return response.data;
-// };
-
-// export const logout = () => {
-//   localStorage.removeItem("authToken");
-//   localStorage.removeItem("user");
-// };
-
-// export { API }; // ✅ Fix: Exporting API correctly
 
 import axios from "axios";
 
-const API_URL = "http://localhost:5001/api"; // ✅ Ensure this matches your backend URL
+const API_URL = "https://tshirt-custom-backend.onrender.com/api"; // ✅ Ensure this matches your backend URL
 
 const API = axios.create({
   baseURL: API_URL,
