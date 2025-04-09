@@ -2,7 +2,7 @@
 
 import axios from "axios";
 
-const API_URL = "https://tshirt-custom-backend.onrender.com/api"; // ✅ Ensure this matches your backend URL
+const API_URL = "https://tshirt-custom-backend.onrender.com"; // ✅ Ensure this matches your backend URL
 
 const API = axios.create({
   baseURL: API_URL,
