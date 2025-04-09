@@ -23,7 +23,7 @@ const DashboardPage = () => {
           return;
         }
 
-        const { data } = await axios.get('https://tshirt-custom-backend.onrender.com', {
+        const { data } = await axios.get('https://tshirt-custom-backend.onrender.com/api/auth/profile', {
           headers: { Authorization: `Bearer ${token}` },
         });
 
