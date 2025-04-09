@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }) => {
   
       console.log("🔹 Sending Registration Request:", userData); // ✅ Log request data
   
-      const { data } = await axios.post("http://localhost:5001/api/auth/register", userData, {
+      const { data } = await axios.post("https://tshirt-custom-backend.onrender.com/api/auth/register", userData, {
         headers: { "Content-Type": "application/json" },
       });
   
@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
     try {
       setLoading(true);
       setError(null);
-      const { data } = await axios.post("http://localhost:5001/api/auth/login", { email, password });
+      const { data } = await axios.post("https://tshirt-custom-backend.onrender.com/api/auth/login", { email, password });
 
       setUser(data);
       localStorage.setItem("user", JSON.stringify(data));
@@ -88,7 +88,7 @@ export const AuthProvider = ({ children }) => {
         return;
       }
 
-      const response = await axios.get("http://localhost:5001/api/auth/profile", {
+      const response = await axios.get("https://tshirt-custom-backend.onrender.com/api/auth/profile", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
