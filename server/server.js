@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // ✅ Fix CORS: Allow multiple frontend origins
-const allowedOrigins = ["http://localhost:5173", "http://localhost:5174"];
+const allowedOrigins = ["https://tshirt-customize-frontend.onrender.com", "http://localhost:5174"];
 
 app.use(
   cors({
