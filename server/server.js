@@ -44,6 +44,7 @@
 // // ✅ Start Server
 // app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 
+
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
@@ -59,7 +60,7 @@ const PORT = process.env.PORT || 5001;
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://tshirt-customize-frontend.onrender.com"
+  "https://tshirt-customize-frontend.onrender.com" // ✅ Render frontend
 ];
 
 app.use(
@@ -92,7 +93,6 @@ mongoose
 
 // ✅ Start Server
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
-
 
 
 
