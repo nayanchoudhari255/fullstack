@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
-import "../styles/Navbar.css";
+import "../styles/navbar.css";
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
